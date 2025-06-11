@@ -1,7 +1,12 @@
 return {
   'akinsho/bufferline.nvim',
+  lazy = false,
   version = '*',
   dependencies = 'nvim-tree/nvim-web-devicons',
+  keys = {
+    { '<A-l>', ':BufferLineCycleNext<CR>', desc = 'Next buffer' },
+    { '<A-h>', ':BufferLineCyclePrev<CR>', desc = 'Previous buffer' },
+  },
   config = function()
     local lackluster = require 'lackluster'
     require('bufferline').setup {
@@ -22,4 +27,5 @@ return {
       },
     }
   end,
+  print 'hello',
 }
