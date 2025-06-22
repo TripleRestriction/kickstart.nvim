@@ -27,5 +27,4 @@ return {
       },
     }
   end,
-  print 'hello',
 }
